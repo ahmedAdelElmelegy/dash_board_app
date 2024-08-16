@@ -23,7 +23,7 @@ abstract class AppStyle {
       fontFamily: 'Montserrat',
       color: AppColor.primaryColor);
 
-  static TextStyle f16semiboldprimary(BuildContext context) => TextStyle(
+  static TextStyle f16boldprimary(BuildContext context) => TextStyle(
       fontSize: getResponsiveFontSize(fontSize: 16, context: context),
       fontWeight: FontWeight.w700,
       fontFamily: 'Montserrat',

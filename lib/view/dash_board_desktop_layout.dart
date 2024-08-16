@@ -1,3 +1,4 @@
+import 'package:dash_board_app/view/widgets/Custom_drawer.dart';
 import 'package:flutter/material.dart';
 
 class DashBoardDesktopLayout extends StatelessWidget {
@@ -5,10 +6,16 @@ class DashBoardDesktopLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Column(
+    return Scaffold(
+      body: Row(
         children: [
-          Text('Windows dash board')
+          Expanded(flex: 2, child: CustomDrawer()),
+          Expanded(
+              flex: 4,
+              child: Container(color: Colors.red, child: const Text('body'))),
+          Expanded(
+              flex: 3,
+              child: Container(color: Colors.blue, child: const Text('jhik')))
         ],
       ),
     );

@@ -4,8 +4,8 @@ double getResponsiveFontSize(
     {required double fontSize, required BuildContext context}) {
   double scaleFactor = getScaleFactor(context);
   double respfontSize = scaleFactor * fontSize;
-  double lowerLimit = fontSize * .8;
-  double upperLimit = fontSize * .2;
+  double lowerLimit = fontSize * .2;
+  double upperLimit = fontSize * .8;
   return respfontSize.clamp(lowerLimit, upperLimit);
 }
 
