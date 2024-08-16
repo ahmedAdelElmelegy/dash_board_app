@@ -5,6 +5,12 @@ class DashBoardDesktopLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return const Scaffold(
+      body: Column(
+        children: [
+          Text('Windows dash board')
+        ],
+      ),
+    );
   }
 }
