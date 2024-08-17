@@ -16,22 +16,44 @@ class _RowListExpensesState extends State<RowListExpenses> {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-        scrollDirection: Axis.horizontal,
-        itemCount: Constants.expensesItem.length,
-        itemBuilder: (context, index) => Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 10),
+    return Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: Constants.expensesItem.asMap().entries.map((e) {
+          int index = e.key;
+          var item = e.value;
+          if (index == 1) {
+            return Expanded(
               child: InkWell(
                 onTap: () {
                   setState(() {
                     _currentIndex = index;
                   });
                 },
-                child: CustomExpensesItem(
-                  isActive: _currentIndex == index,
-                  expensesitem: Constants.expensesItem[index],
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 12),
+                  child: CustomExpensesItem(
+                    isActive: _currentIndex == index,
+                    expensesitem: item,
+                  ),
                 ),
               ),
-            ));
+            );
+          } else {
+            return Expanded(
+              child: InkWell(
+                  onTap: () {
+                    setState(() {
+                      _currentIndex = index;
+                    });
+                  },
+                  child: CustomExpensesItem(
+                    expensesitem: item,
+                    isActive: _currentIndex == index,
+                  )),
+            );
+          }
+        }).toList());
   }
 }
+
+

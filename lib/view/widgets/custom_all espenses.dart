@@ -19,7 +19,7 @@ class CustomAllExPenses extends StatelessWidget {
           children: [
             const AllExpensesTitle(),
             verticalSpacing(.05, context),
-            SizedBox(height: size.height * .25, child: const RowListExpenses())
+            const RowListExpenses()
           ],
         ),
       ),
