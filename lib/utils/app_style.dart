@@ -6,22 +6,38 @@ abstract class AppStyle {
   // 12
 
   static TextStyle f12normalgrey(BuildContext context) => TextStyle(
-      fontSize: getResponsiveFontSize(fontSize: 16, context: context),
+      fontSize: getResponsiveFontSize(fontSize: 12, context: context),
       fontWeight: FontWeight.w400,
       fontFamily: 'Montserrat',
       color: AppColor.subtitleColor);
+// 14
 
+  static TextStyle f14normalwhite(BuildContext context) => TextStyle(
+      fontSize: getResponsiveFontSize(fontSize: 14, context: context),
+      fontWeight: FontWeight.w400,
+      fontFamily: 'Montserrat',
+      color: AppColor.fieldColor);
+  static TextStyle f14normalgrey(BuildContext context) => TextStyle(
+      fontSize: getResponsiveFontSize(fontSize: 14, context: context),
+      fontWeight: FontWeight.w400,
+      fontFamily: 'Montserrat',
+      color: AppColor.subtitleColor);
   // 16
   static TextStyle f16semiboldblack(BuildContext context) => TextStyle(
       fontSize: getResponsiveFontSize(fontSize: 16, context: context),
       fontWeight: FontWeight.w600,
       fontFamily: 'Montserrat',
       color: AppColor.blackColor);
-  static TextStyle f16mediumrimary(BuildContext context) => TextStyle(
+  static TextStyle f16mediumprimary(BuildContext context) => TextStyle(
       fontSize: getResponsiveFontSize(fontSize: 16, context: context),
       fontWeight: FontWeight.w500,
       fontFamily: 'Montserrat',
       color: AppColor.primaryColor);
+  static TextStyle f16mediumblack(BuildContext context) => TextStyle(
+      fontSize: getResponsiveFontSize(fontSize: 16, context: context),
+      fontWeight: FontWeight.w500,
+      fontFamily: 'Montserrat',
+      color: AppColor.blackColor);
 
   static TextStyle f16boldprimary(BuildContext context) => TextStyle(
       fontSize: getResponsiveFontSize(fontSize: 16, context: context),

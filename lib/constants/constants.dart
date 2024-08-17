@@ -9,4 +9,10 @@ abstract class Constants {
     DrawerModel(image: Assets.imagesWalletAccount, title: 'Wallet Account'),
     DrawerModel(image: Assets.imagesMyInvestments, title: 'My Investments'),
   ];
+
+  static List<DrawerModel> expensesItem = [
+    DrawerModel(image: Assets.imagesBalance, title: 'Balance'),
+    DrawerModel(image: Assets.imagesIncome, title: 'Income'),
+    DrawerModel(image: Assets.imagesIncome, title: 'Expenses'),
+  ];
 }

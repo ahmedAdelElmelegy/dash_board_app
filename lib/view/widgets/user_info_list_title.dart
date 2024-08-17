@@ -9,18 +9,22 @@ class UserInfoListTitle extends StatelessWidget {
   final UserModel userdata;
   @override
   Widget build(BuildContext context) {
-    return Card(
-      elevation: 0,
-      color: AppColor.fieldColor,
-      child: ListTile(
-        leading: SvgPicture.asset(userdata.image),
-        title: Text(
-          userdata.title,
-          style: AppStyle.f16semiboldblack(context),
-        ),
-        subtitle: Text(
-          userdata.subtitle,
-          style: AppStyle.f12normalgrey(context),
+    Size size = MediaQuery.sizeOf(context);
+    return SizedBox(
+      width: size.width * .16,
+      child: Card(
+        elevation: 0,
+        color: AppColor.fieldColor,
+        child: ListTile(
+          leading: SvgPicture.asset(userdata.image),
+          title: Text(
+            userdata.title,
+            style: AppStyle.f16semiboldblack(context),
+          ),
+          subtitle: Text(
+            userdata.subtitle,
+            style: AppStyle.f12normalgrey(context),
+          ),
         ),
       ),
     );

@@ -1,6 +1,10 @@
 class Assets {
   Assets._();
   
+  /// Assets for imagesBackgroundAppExper
+  /// assets/images/background_app_exper.png
+  static const String imagesBackgroundAppExper = "assets/images/background_app_exper.png";
+
   /// Assets for imagesBalance
   /// assets/images/balance.svg
   static const String imagesBalance = "assets/images/balance.svg";
@@ -8,6 +12,10 @@ class Assets {
   /// Assets for imagesDashboard
   /// assets/images/dashboard.svg
   static const String imagesDashboard = "assets/images/dashboard.svg";
+
+  /// Assets for imagesExpensesBackground
+  /// assets/images/expenses_background.svg
+  static const String imagesExpensesBackground = "assets/images/expenses_background.svg";
 
   /// Assets for imagesImg
   /// assets/images/img.svg

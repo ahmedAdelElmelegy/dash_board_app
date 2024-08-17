@@ -1,3 +1,5 @@
+import 'package:dash_board_app/utils/app_color.dart';
+import 'package:dash_board_app/view/widgets/Custom_center_widget.dart';
 import 'package:dash_board_app/view/widgets/Custom_drawer.dart';
 import 'package:flutter/material.dart';
 
@@ -12,7 +14,9 @@ class DashBoardDesktopLayout extends StatelessWidget {
           Expanded(flex: 2, child: CustomDrawer()),
           Expanded(
               flex: 4,
-              child: Container(color: Colors.red, child: const Text('body'))),
+              child: Container(
+                  color: AppColor.fieldColor,
+                  child: const CustomCenterWidget())),
           Expanded(
               flex: 3,
               child: Container(color: Colors.blue, child: const Text('jhik')))
