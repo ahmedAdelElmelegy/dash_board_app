@@ -18,7 +18,7 @@ class CustomAllExPenses extends StatelessWidget {
         child: Column(
           children: [
             const AllExpensesTitle(),
-            verticalSpacing(.05, context),
+            verticalSpacing(.03, context),
             const RowListExpenses()
           ],
         ),

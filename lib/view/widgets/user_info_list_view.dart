@@ -24,18 +24,16 @@ class UserInfoListview extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.sizeOf(context);
 
-    return SizedBox(
-      height: size.height * .08,
-      child: ListView.builder(
-        scrollDirection: Axis.horizontal,
-        physics: const BouncingScrollPhysics(),
-        itemCount: userlist.length,
-        itemBuilder: (context, index) {
-          return UserInfoListTitle(
-            userdata: userlist[index],
-          );
-        },
-      ),
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: Row(
+          children: userlist.map((e) {
+        return IntrinsicWidth(
+          child: UserInfoListTitle(
+            userdata: e,
+          ),
+        );
+      }).toList()),
     );
   }
 }

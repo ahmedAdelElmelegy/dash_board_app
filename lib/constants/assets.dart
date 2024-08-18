@@ -5,6 +5,10 @@ class Assets {
   /// assets/images/background_app_exper.png
   static const String imagesBackgroundAppExper = "assets/images/background_app_exper.png";
 
+  /// Assets for imagesBagroudCard
+  /// assets/images/bagroud_card.png
+  static const String imagesBagroudCard = "assets/images/bagroud_card.png";
+
   /// Assets for imagesBalance
   /// assets/images/balance.svg
   static const String imagesBalance = "assets/images/balance.svg";
